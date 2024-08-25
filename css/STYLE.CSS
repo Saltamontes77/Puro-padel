@@ -4,7 +4,21 @@
     color-terciario:#c8212d ;
     color-cuarto:#f0fc6f ; */
 
-body {background-color: rgb(255, 10, 10);background-image: url(../img/Padel\ 2.jpg); background-size: contain;}
+.fondoind{
+    background-image: url(../img/PADEL\ 41.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.fondoa1{
+    background-image: url(../img/a1padel\ transp.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+}
+
 .LINK{ text-align: right; color: rgb(0, 0, 5); font-style: italic; font-weight: bold; text-decoration: underline; }
 
 
@@ -77,13 +91,75 @@ margin: 30px 30px 30px 60px;}
 }
     
 }
-
 .footer {
-display: flex;
-flex-flow: row wrap;
-margin: 30px;
-padding: 30px ;
-justify-content: space-around;
-margin: auto;
+    background-color: gray;
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+    padding: 30px ;
+    justify-content: space-around;
+}
+.CUADRO{background-color: black; color: chocolate; border: 1px solid chocolate; display: grid;gap: 1EM;
+padding: 10PX; margin:20px;}
+.TITULO{text-align: center; font-size: 23px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+@media (max-width: 900px){.tarjeta{ display: grid; grid-template-columns:  1fr 1fr 1fr;}}
+
+
+
+.selection{
+    display: grid;
+    flex-flow: column;
+}
+
+.article{
+    background-color: aquamarine;
+    padding: 2px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: 200ms;
+    transition-property: background-color,color,border;
+
+
 
 }
+.article:hover{
+    background-color: aquamarine;
+    color: blue;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+
+}
+.TITULO .article-p{
+display: flex;
+justify-content: center;
+}
+.titulomayor{
+    background-color: aquamarine;
+    padding: 2px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    ;
+}
+
+@media (min-width: 992px){
+    .selection{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        display: grid;
+    } .titulomayor{
+        grid-template-columns: 1fr;
+    } .form {
+        display: grid;
+        gap: 2em;
+        
+    }
+    
+    }
+    main{
+        display: grid;
+        gap: 1em;
+    }
