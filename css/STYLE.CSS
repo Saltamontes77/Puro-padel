@@ -3,7 +3,9 @@
     color-secundario:#EDF01A ;
     color-terciario:#c8212d ;
     color-cuarto:#f0fc6f ; */
-
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 .fondoind{
     background-image: url(../img/PADEL\ 41.jpg);
     background-size: cover;
@@ -11,27 +13,163 @@
     background-position: center;
 
 }
+.fondopremier{
+    background-image: url(../img/PREMIER\ PADEL\ 1.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
 .fondoa1{
-    background-image: url(../img/a1padel\ transp.jpg);
-    background-size: cover;
+    background-image: url(../img/A1\ PADEL\ 3.jpg);
+    background-size: 230%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: repeat;
 }
+.fondomarket{
+    background-image: url(../img/Padel\ 3.jpg);
+    background-size: 200%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
 .LINK{ text-align: right; color: rgb(0, 0, 5); font-style: italic; font-weight: bold; text-decoration: underline; }
+header{
+    background-color: rgb(6, 6, 6);
+    color: white;
+    
+    
 
+}
+ul, ol{
+    list-style: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black
+    
+}
+
+.nav-links li {
+    margin: 0 10px;
+    border: 4px solid black;
+    border-radius: 30%;
+    
+}
+
+.nav-links a {
+    color: rgb(35, 135, 211);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.menu-toggle-checkbox {
+    display: none;
+    
+}
+
+.menu-toggle-label {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+    
+}
+
+.menu-toggle-label .bar {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute ;
+        top: 60px;
+        left: 0;
+        height: 200px;
+        background-color: #333;
+    }
+    
+    .nav-links li {
+        margin: 0;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .menu-toggle-label {
+        display: flex;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav-links {
+        display: flex;
+    }
+    
+}
 
 .pmarket{ color: blue; font-style: italic; font-size: 35px;}
-.h2{font-size: 35px; font-weight: bold; text-align: center;}
-.PUROPADEL {background-color: rgb(49, 3, 214); color: rgb(3, 3, 3); font-family: sans-serif; text-align: center; font-size: 60px; font-weight: bold; font-style: italic; text-decoration: underline;}
+.h2{font-size: 35px; font-weight: bold; text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.PUROPADEL {
+    height: 200px;
+    display: flex;
+    margin: auto;
+}
 .palabra{font-style: italic; font-weight: bold; font-size: 35px;}
-.form{ background-color:  rgb(49, 3, 214); border: 4px solid black; padding: 1em;}
-.BIENVENIDOALMARKET{ background-color: greenyellow; color: blue; text-align: center; font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
-.PREMIERPADEL {background-color: greenyellow; color: blue; text-align: center; font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
-.A1PADEL {background-color: greenyellow; color: blue; text-align: center; font-size: 60px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+.form{ background-image: url(/img/imagen\ padel.png); background-size: 100%; border: 3px solid black; padding: 1em;}
+.enviar{
+    background-color: black;color: whitesmoke;border:2px #fff solid ;
+
+}
+.enviar:hover{
+    background-color: whitesmoke; color: black;
+    cursor: pointer;
+}
+
+.form1{
+    margin: 5px;
+    border: 2px solid black;
+}
 .lipadel{
     margin: 10%; padding: auto; 
+    background-color: rgb(35, 135, 211);
+    padding: 20px;
+    text-align: left; width: 50%;
+    border-radius: 10px; border: black 2px solid;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .cont1 {
     background-color: rgb(255, 240, 250);
@@ -62,47 +200,24 @@
 
     .contacto{ background-color: rgb(0, 6, 11); color: crimson; font-size: 30px;}
 
-.elemento{
-    list-style-type: none;
-    padding: 20px;
-    display: flex;
-    flex-flow: row wrap ;
-    background-color: blueviolet;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin: 0 auto;
-    border: 10px solid black;
-}
-
-.elemento1{margin: 30px 30px 30px 60px;
-    width: 20px;
-    padding: 30px 50px;
-    border: 4px solid black;}
-
-.elemento2{width: 20px; border: 4px solid black ;
-padding: 30px 50px;
-margin: 30px 30px 30px 60px;}
-
-.elemento3{width: 20px; border: 4px solid black;
-padding: 30px 50px; margin: 30px 30px 30px 60px;}
-
-.elemento4{width: 20px; border: 4px solid black; padding: 30px 50px;
-margin: 30px 30px 30px 60px;}
-
-@media (min-width: 992px){ .elemento1 {
-    background-color: chartreuse; color: black;
-}
     
-}
-.footer {
-    background-color: rgba(128, 128, 128, 0.925);
-    display: flex;
-    justify-content: space-around;
-    font-weight: bold;
-    margin: auto;
-    padding: 30px ;
 
-    ;
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.footer a:hover{
+    color: #f39c12;
+}
+.footer .social-icons {
+    font-size: 24px;
 }
 .CUADRO{background-color: black;
     color: chocolate; 
@@ -114,7 +229,16 @@ margin: 30px 30px 30px 60px;}
 
 }
 .TITULO{text-align: center; font-size: 23px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-@media (min-width: 900px){.tarjeta{ display: grid; flex-flow: column ; grid-template-columns: 1fr 1fr 1fr;}}
+@media (min-width: 900px){.tarjeta{ 
+    display: grid; flex-flow: column ;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    .PUROPADEL{
+        height: auto;
+        width: auto;
+    }
+
+    }
 
 .tarjeta{
     display: grid;
@@ -127,13 +251,14 @@ margin: 30px 30px 30px 60px;}
     flex-flow: column;
 }
 
-.article{
-    background-color: rgb(27, 11, 244);
-    padding: 2px;
+.articleP{
+    background-image: url(/img/fondo\ paletas.png);
+    background-size: 95%;
+    padding: 50px;
     display: flex;
     flex-flow: column;
     text-align: center;
-    margin: 10px;
+    margin: 30px;
     border: 5px solid black;
     border-radius: 10px;
     transition: 200ms;
@@ -142,7 +267,7 @@ margin: 30px 30px 30px 60px;}
 
 
 }
-.article:hover {
+.articleP .ARTICLEI .ARTICLEZ:hover {
     background-color: rgb(9, 20, 147);
     color: blue;
     scale: 1.2;
@@ -150,6 +275,40 @@ margin: 30px 30px 30px 60px;}
     box-shadow: 0px 0px 10px black;
 
 }
+.articleI{
+    background-image: url(/img/fondo\ indumentaria.png);
+    padding: 50px;
+    background-size: 89%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 30px;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: 200ms;
+    transition-property: background-color,color,border;
+
+
+
+}
+
+.articleZ{
+    background-image: url(/img/fondo\ zapatillas.png);
+    padding: 50px;
+    background-size: 100%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin: 30px;
+    border: 5px solid black;
+    border-radius: 10px;
+    transition: 200ms;
+    transition-property: background-color,color,border;
+
+
+
+}
+
 .TITULO .article-p{
 display: flex;
 justify-content: center;
@@ -177,6 +336,10 @@ justify-content: center;
         gap: 2em;
         
     }
+    .lipadel {
+        font-size: xx-large;
+    }
+
     
     }
 main{
@@ -195,9 +358,10 @@ main{
         scale: 100%;
     }
 }
-img {
-    width: 100%;
+.imagen {
+    width: 70%;
     height: auto;
+    margin-bottom: 60px;
     border-radius: 20%;
     view-timeline-name: --image;
     view-timeline-axis: block;
